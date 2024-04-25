@@ -1,23 +1,32 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import { Route, Routes } from 'react-router-dom';
+import Header from './Component1/Home/Header/Header';
+import Nextpage from './Component1/Nextpage/Pageheader/Nextpage';
+import Nextpagesec from './Component1/Nextpage/Nextpagesection/Nextpagesec';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+  
+       
+       {/* Home page Route */}
+        <Route path='/' element={<Header/>}/>
+
+        {/* Nextpage link on click next button  */}
+
+
+        <Route path='/next' element={<Nextpage/>}/>
+        <Route path='/next/:index' element={<Nextpagesec/>}/>
+
+   
+   
+      </Routes>
+    
     </div>
   );
 }

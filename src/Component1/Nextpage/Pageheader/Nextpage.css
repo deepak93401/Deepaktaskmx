@@ -1,0 +1,29 @@
+#Next{
+    width: 100%;
+    background-color: #312761;
+}
+
+a.navbar-brand {
+    color: white;
+}
+
+a.nav-link {
+    color: white;
+}
+
+button.btn.btn-primary {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(65,65,129,1) 68%, rgba(19,169,218,1) 84%, rgba(0,212,255,1) 100%);
+    border: none;
+}
+.Next-div h2{
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+.Next-div h2 span{
+    background: -webkit-linear-gradient(left, #ff8a00, #e52e71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   
+}

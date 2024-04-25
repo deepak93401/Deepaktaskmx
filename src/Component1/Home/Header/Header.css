@@ -1,0 +1,105 @@
+header{
+    width: 100%;
+    background-image: url('./space.jpg');
+    background-position: center;
+    background-size: cover;
+    
+}
+
+/* navbar css */
+a.navbar-brand {
+    color: white;
+}
+
+
+a.nav-link {
+    color: white;
+}
+
+a.navbar-brand:hover ,a.nav-link:hover{
+    background: -webkit-linear-gradient(#b560a4, #b7181a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+button.btn.btn-primary {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(65,65,129,1) 68%, rgba(19,169,218,1) 84%, rgba(0,212,255,1) 100%);
+    border: none;
+}
+
+div#offcanvasNavbar-expand-lg{
+    background-color: rgb(141, 141, 160);
+}
+.offcanvas-header button.btn-close{
+    color: white;
+}
+
+/* banner css */
+ .banner{
+    width: 100%;
+    
+ }
+
+ .btn1,.btn2,.btn3,.btn4{
+    padding: 10px 40px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 20px;
+ }
+ .btn1{
+     background-color: blue;
+ }
+ .btn2{
+     background-color:yellow;
+ }
+ .btn3{
+     background-color: green;
+ }
+ .btn4{
+     background-color: rgb(2,0,36);
+ }
+
+ /* wave css */
+ .wave{
+    position: relative;
+    top: 70px;
+}
+
+/* media query */
+
+@media screen and (max-width: 1200px) {
+    .wave{
+        position: relative;
+        top: 30px;
+    }
+   
+  }
+
+  @media screen and (max-width: 992px) {
+    .wave{
+        display: none;
+    }
+    span.navbar-toggler-icon{
+        background-color: white;
+        padding: 5px;
+    }
+    .button-sec{
+        padding: 30px;
+    }
+    
+   
+  }
+
+  @media screen and (max-width: 768px) {
+    .button-sec{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    
+    }
+    
+   
+  }
+
